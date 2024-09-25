@@ -1,27 +1,44 @@
 # Health Insurance Candidate Application Decision Process
 
-This repository contains two source code files in the `src` folder, each exploring different aspects of a health insurance decision-making process using machine learning techniques. The scripts focus on the prediction of application outcomes and decision-making processes, providing a practical demonstration of machine learning models in healthcare.
+This repository contains two python modules for two use cases in the `src` folder, each exploring different aspects of a health insurance decision-making process using machine learning techniques. The scripts focus on the prediction of application outcomes and decision-making processes, providing a practical demonstration of machine learning models in healthcare.
 
-## Source Code
+## Modules
 
-### 1. Case Study: Health Insurance Candidate Application Decision Process
-This script delves into the decision-making process for health insurance candidate applications. It explores data-driven approaches to assess whether a candidate is eligible for insurance coverage, utilizing machine learning models to improve the decision-making process.
-
-#### Contents
-- **Data Preprocessing:** Steps to clean and prepare the data for analysis.
-- **Feature Engineering:** Methods used to create meaningful features from the raw data.
-- **Model Training and Evaluation:** Implementation of different machine learning models and their evaluation on the given dataset.
-- **Insights and Analysis:** Key takeaways from the model performance and its implications for health insurance decision-making.
-
-### 2. Case Study: Health Insurance Candidate Application Decision Process (Second Script)
-This script builds upon the previous analysis by exploring additional aspects of the decision-making process, with a specific focus on improving model performance and drawing conclusions about the practical implications of the results.
+### Use Case 1: Health Insurance Candidate Application Decision Process
+This module explores the decision-making process for health insurance candidate applications. It implements machine learning models to predict whether a candidate is eligible for health insurance coverage.
 
 #### Contents
-- **Advanced Feature Engineering:** Further techniques to enhance model performance.
-- **Hyperparameter Tuning:** Fine-tuning of machine learning models to achieve better results.
-- **Model Interpretability:** Techniques used to interpret the results and apply them to real-world decision-making processes.
-- **Practical Implications:** Discussion of how these models can influence decision-making in a health insurance context.
+- **Data Preprocessing**: Steps to clean and prepare the data, including handling missing values and removing collinear features.
+- **Model Training**: Implementation of models like K-Nearest Neighbors, RandomForest, and XGBoost.
+- **Model Evaluation**: Evaluation of models using accuracy, classification report, and confusion matrix.
 
+#### Usage
+You can run the module by executing:
+
+```bash
+python use_case_1_module.py
+
+
+###  Use Case 2: Advanced Feature Engineering and Model Evaluation
+
+This Python module builds on the first use case by further exploring feature engineering and model evaluation for health insurance candidate applications. It uses multiple machine learning models to analyze candidate data and predict outcomes.
+
+#### Contents
+- **Data Preprocessing**: 
+  - Merging multiple datasets
+  - Handling missing values
+  - Creating engineered features like BMI ranges
+- **Model Training**: Implementing the following models:
+  - RandomForest
+  - Logistic Regression
+  - Support Vector Machine (SVM)
+- **Model Evaluation**: Evaluating models using accuracy, confusion matrices, and classification reports.
+
+#### Usage
+You can run the module by executing:
+
+```bash
+python use_case_2_module.py
 ## Getting Started
 
 ### Prerequisites
