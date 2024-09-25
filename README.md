@@ -12,11 +12,7 @@ This module explores the decision-making process for health insurance candidate 
 - **Model Training**: Implementation of models like K-Nearest Neighbors, RandomForest, and XGBoost.
 - **Model Evaluation**: Evaluation of models using accuracy, classification report, and confusion matrix.
 
-#### Usage
-You can run the module by executing:
 
-```bash
-python use_case_1_module.py
 
 
 ###  Use Case 2: Advanced Feature Engineering and Model Evaluation
@@ -34,11 +30,6 @@ This Python module builds on the first use case by further exploring feature eng
   - Support Vector Machine (SVM)
 - **Model Evaluation**: Evaluating models using accuracy, confusion matrices, and classification reports.
 
-#### Usage
-You can run the module by executing:
-
-```bash
-python use_case_2_module.py
 ## Getting Started
 
 ### Prerequisites
