@@ -40,3 +40,56 @@ To install the required libraries, you can run:
 
 ```bash
 pip install -r requirements.txt
+
+## Running the Project in Docker
+
+You can run this project inside a Docker container to ensure consistency across different environments.
+
+### 1. Build the Docker Image
+
+Before building, ensure that the `Dockerfile` and `requirements.txt` are in place. Then run the following command to build the Docker image:
+
+```bash
+docker build -t healthcare_work_image .
+```
+
+### 2. Run the Docker Container
+
+Once the image is built, run the container using:
+
+```bash
+docker run -d -p 8080:8080 --name healthcare_work_container healthcare_work_image
+```
+
+This will start the container and expose it on port 8080.
+
+### 3. Verify the Container
+
+You can verify that the container is running by using the following command:
+
+```bash
+docker ps
+```
+
+### 4. Access the Application
+
+Once the container is running, you can access the application (or API, if relevant) in your browser at:
+
+```
+http://localhost:8080
+```
+
+Modify the port if needed depending on your application's configuration.
+
+### 5. Stop the Docker Container
+
+To stop the container, run:
+
+```bash
+docker stop healthcare_work_container
+```
+
+### Additional Notes
+
+- Make sure that your environment is set up with the correct `requirements.txt` file that lists all the necessary Python dependencies for the project.
+- If the project uses multiple services (e.g., a database), consider setting up `docker-compose.yml` for multi-container setups.
